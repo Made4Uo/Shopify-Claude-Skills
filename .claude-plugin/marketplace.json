@@ -11,14 +11,22 @@
       "name": "made4uo-theme-studio",
       "source": "./plugins/made4uo-theme-studio",
       "description": "Design, build and check a Shopify store theme with Claude: competitor and customer research, research-based color and font themes, consistent reusable sections, a review loop with the merchant, and accessibility, SEO and Lighthouse checks.",
-      "version": "3.3.0",
+      "version": "3.3.1",
       "author": {
         "name": "Made4Uo",
         "url": "https://made4uo.com"
       },
       "homepage": "https://made4uo.com",
       "license": "Apache-2.0",
-      "keywords": ["shopify", "ecommerce", "storefront", "theme", "design", "accessibility", "seo"]
+      "keywords": [
+        "shopify",
+        "ecommerce",
+        "storefront",
+        "theme",
+        "design",
+        "accessibility",
+        "seo"
+      ]
     }
   ]
 }

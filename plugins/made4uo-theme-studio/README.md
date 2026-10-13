@@ -41,10 +41,21 @@ Connect Shopify's connector, then ask in plain words, for example:
 
 - **Your Shopify store,** through Shopify's connector: reads shop details, products, collections, inventory, themes and theme files, and sales analytics (totals only, never individual customers' details). With your approval it writes theme files to an unpublished theme, and can create pages, collections, menus and images in Files.
 - **Public web pages** of competitors and search results, read for research.
-- **In the browser:** `visual_tokens.js` and `page_audit.js` read colors, fonts and SEO and accessibility signals from the page being checked. `axe_audit.js` loads the open-source axe-core library from cdn.jsdelivr.net into the page it audits.
+- **In the browser:** `visual_tokens.js` and `page_audit.js` read colors, fonts and SEO and accessibility signals from the page being checked. `axe_audit.js` loads the open-source axe-core library (version 4.14.0) from cdn.jsdelivr.net into the page it audits; the browser runs it only if it matches a fixed integrity hash of that exact file.
 - **Google PageSpeed Insights** receives your store's page address when Claude runs Lighthouse, and only if the page is public.
 - **Local tools** (`theme_colors.py`, `theme_files.py`, `theme_lint.py`) run inside Claude's workspace and make no network requests.
 - **Made4Uo receives no data.** New theme files carry a short hidden code comment crediting Made4Uo, which shoppers never see, and a visible footer credit is added only if you say yes.
+
+## Privacy
+
+Made4Uo Theme Studio is a set of instructions and small tools that run inside your own Claude session. Made4Uo runs no server for it and receives no data from it.
+
+- **What it reads:** your store's details (including the store owner's name and contact email), products, collections, inventory, themes and theme files, and sales totals, all through Shopify's connector, which you connect and control. It never reads individual customers' names or details.
+- **What it stores:** nothing. Copies of theme files that Claude keeps for undo exist only in that session's workspace and are design files, not personal data. Anything Claude writes goes into your own Shopify store, with your approval.
+- **What it sends elsewhere:** only what is listed above under "What it runs, sends and fetches": page addresses to Google PageSpeed Insights, requests to cdn.jsdelivr.net for the accessibility checker, and web searches and visits to public competitor pages.
+- **Your conversation** with Claude is handled under Anthropic's own policies, separately from this plugin.
+
+Questions about privacy: contact Made4Uo through [made4uo.com](https://made4uo.com).
 
 ## License
 

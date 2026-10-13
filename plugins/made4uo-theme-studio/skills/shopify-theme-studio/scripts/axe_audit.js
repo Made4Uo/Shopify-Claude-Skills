@@ -1,11 +1,15 @@
 (async () => {
   const VERSION = '4.14.0';
+  // Subresource Integrity: the browser runs the file only if it matches this hash of axe-core 4.14.0 exactly.
+  const INTEGRITY = 'sha384-lFUXB8tI4BaTE1bqxH9eeAXON2NH1qsdAhs7S5L++nUNP5QOy+hwr0C3TYEJUEl0';
   if (!window.axe) {
     await new Promise((resolve, reject) => {
       const s = document.createElement('script');
       s.src = `https://cdn.jsdelivr.net/npm/axe-core@${VERSION}/axe.min.js`;
+      s.integrity = INTEGRITY;
+      s.crossOrigin = 'anonymous';
       s.onload = resolve;
-      s.onerror = () => reject(new Error('could not load axe-core'));
+      s.onerror = () => reject(new Error('could not load axe-core, or it failed its integrity check'));
       document.head.appendChild(s);
     });
   }
