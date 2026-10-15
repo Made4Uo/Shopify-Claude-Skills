@@ -6,7 +6,7 @@ Claude plugins and skills that help Shopify merchants design, build and improve 
 
 | Plugin | What it does |
 |---|---|
-| [**Made4Uo Theme Studio for Shopify**](plugins/made4uo-theme-studio) | Researches your competitors and customers, suggests color and font themes based on that research, builds a consistent homepage and customer-specific landing pages in an unpublished copy of your theme, reviews them with you, and finishes with accessibility, technical SEO and Lighthouse checks. |
+| [**Made4Uo Theme Studio for Shopify**](plugins/made4uo-theme-studio) | Researches your competitors' home and product pages and your customers, designs your brand with an original logo, then builds your store on Shopify's latest Horizon theme: homepage, product page, customer-specific landing pages, trust pages (why shop with us, about, refunds and returns), navigation and footer. It checks in with you at every step and finishes with accessibility, technical SEO and Lighthouse checks. |
 
 More Shopify plugins, such as marketing, are on the way. Once you've added this repository in Claude, new plugins appear in the same list.
 
@@ -28,6 +28,7 @@ More Shopify plugins, such as marketing, are on the way. Once you've added this 
 ## Before you start
 
 - **Connect Shopify's connector for Claude** in the conversation where you use the plugin. All store work goes through it, and Shopify asks you to approve every change.
+- **Shopify's free Horizon theme** in your theme library. Claude checks that it's the latest version and asks you to add it from the Theme Store if it isn't there.
 - **Optional:** give Claude a browser it can use (Claude in Chrome, or the Claude desktop app's built-in browser). It's needed for reading competitors' styles, preview screenshots and the accessibility checks; without one, Claude skips those and tells you.
 
 ## Try it
@@ -36,13 +37,15 @@ Ask in plain words, for example:
 
 - "Build a homepage for my candle store."
 - "Restyle my store with colors that stand out from my competitors."
+- "Design a logo and brand for my new candle shop."
 - "Review my homepage and fix the top three issues."
 - "Figure out who my customers are and create pages for them."
 
 ## How it keeps your store safe
 
 - Claude edits only an **unpublished** theme and keeps backups of every file it changes. You preview the result and publish it yourself when you're happy.
-- Claude never publishes a theme, deletes a theme, or changes prices or inventory.
+- Claude never publishes a theme, deletes a theme, or changes prices or inventory, and never edits the menus your live store uses.
+- You check every piece of work (the research, the brand board, page drafts, built pages, the preview) and say the word to change anything. Pages, menus and policies are created only after you approve them.
 - Reviews, ratings, guarantees and other trust signals come only from your store's real data or from you. Nothing is invented.
 - **Made4Uo receives no data.** The plugin README lists [everything the plugin runs, sends and fetches](plugins/made4uo-theme-studio/README.md#what-it-runs-sends-and-fetches).
 

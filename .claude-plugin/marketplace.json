@@ -10,8 +10,8 @@
     {
       "name": "made4uo-theme-studio",
       "source": "./plugins/made4uo-theme-studio",
-      "description": "Design, build and check a Shopify store theme with Claude: competitor and customer research, research-based color and font themes, consistent reusable sections, a review loop with the merchant, and accessibility, SEO and Lighthouse checks.",
-      "version": "3.3.1",
+      "description": "Design, brand, build and check a Shopify store with Claude on the latest Horizon theme: competitor homepage and product page research, a brand board with original logo concepts, trust pages (why shop with us, about, refunds and returns), collection-led navigation, a policy-rich footer, even product grids, merchant check-ins at every step, and accessibility, SEO and Lighthouse checks.",
+      "version": "3.6.0",
       "author": {
         "name": "Made4Uo",
         "url": "https://made4uo.com"
@@ -25,7 +25,10 @@
         "theme",
         "design",
         "accessibility",
-        "seo"
+        "seo",
+        "horizon",
+        "branding",
+        "logo"
       ]
     }
   ]
